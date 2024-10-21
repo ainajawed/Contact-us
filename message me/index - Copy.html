@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div>
+  <form class="form" id="contactForm" method="POST">
+    <input type="hidden" name="access_key" value="ENTER_YOUR_KEY">
+    <p class="title"> Contact Us </p>
+    <p class="message">Feel free to connect with us anytime!</p>
+        <div class="flex">
+        <label>
+            <input class="input" type="text" id="fname" name="first_name" placeholder="" required="">
+            <span>First Name</span>
+        </label>
+
+        <label>
+            <input class="input" type="text" id="lname" name="last_name" placeholder="" required="">
+            <span>Last Name</span>
+        </label>
+    </div>  
+            
+    <label>
+        <input class="input" type="email" id="email" name="email"placeholder="" required="">
+        <span>Email</span>
+    </label>
+
+    <label>
+        <input class="input" type="tel" id="number" name="Phone_number"placeholder="" required="">
+        <span>Phone Number</span>
+    </label> 
+        
+    <label>
+        <textarea class="input" id="message" name="message" placeholder="" required></textarea>
+        <!--<input class="input" type="text" id="message" placeholder="" required="">-->
+        <span>Your Message</span>
+    </label>
+    <button class="submit" type="submit">Send Message</button>
+</form>
+
+    <div id="response" class="response-message"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
